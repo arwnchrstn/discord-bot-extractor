@@ -17,11 +17,13 @@
     "bad-words-next": "^3.1.1",
     "discord.js": "^14.17.3",
     "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "leo-profanity": "^1.7.0",
     "profanity-check": "^0.0.3"
   },
   "devDependencies": {
     "@types/amqplib": "^0.10.6",
+    "@types/express": "^5.0.0",
     "@types/leo-profanity": "^1.5.4",
     "@types/node": "^22.13.1",
     "nodemon": "^3.1.9",
