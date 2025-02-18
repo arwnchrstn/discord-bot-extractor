@@ -22,14 +22,20 @@ registerEvents(client)
 
 client.login(process.env.token)
 
-const messageQueue = MessageQueue.getInstance()
-const deadQueue = DeadLetterMQ.getInstance()
+// const messageQueue = MessageQueue.getInstance()
+// const deadQueue = DeadLetterMQ.getInstance()
 
-deadQueue.init()
-messageQueue.init()
+// deadQueue.init()
+// messageQueue.init()
 
 app.listen(10000, () => {
   console.log('Listening on port 10000')
+
+  setInterval(() => {
+    fetch(process.env.service_url as string)
+    .then()
+    .catch()
+  }, 1000)
 })
 
 app.get('/health', (req: Request, res: Response) => {
