@@ -30,12 +30,6 @@ messageQueue.init()
 
 app.listen(10000, () => {
   console.log('Listening on port 10000')
-
-  setInterval(() => {
-    fetch(process.env.service_url as string)
-    .then()
-    .catch()
-  }, 1000 * 60 * 8)
 })
 
 app.get('/health', (req: Request, res: Response) => {
