@@ -1,8 +1,8 @@
-name: Suspend discord bot extractor
+name: Suspend discord bot extractor every 6 AM PHT
 
 on:
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '0 22 * * *'
   workflow_dispatch:
 
 jobs:
@@ -10,4 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run suspend command
-        run: echo "This is working"
+        run: |
+          curl -X POST \ 
+          -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \ 
+          https://api.render.com/v1/services/YOUR_SERVICE_ID/resume
