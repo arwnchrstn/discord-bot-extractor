@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Run suspend command
         run: |
-          curl -X POST \ 
-          -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \ 
-          https://api.render.com/v1/services/YOUR_SERVICE_ID/suspend
+          curl -X POST \
+            -H "Authorization: Bearer ${{secrets.RENDER_API_KEY}}" \
+            https://api.render.com/v1/services/srv-cvpvo7uuk2gs73e9n6t0/suspend
