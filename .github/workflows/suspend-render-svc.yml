@@ -1,0 +1,15 @@
+name: Suspend discord bot extractor
+
+on:
+  schedule:
+    - cron: '1 * * * *'
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run suspend command
+        run: echo "This is working"
+
+    
