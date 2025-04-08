@@ -11,5 +11,3 @@ jobs:
     steps:
       - name: Run suspend command
         run: echo "This is working"
-
-    
