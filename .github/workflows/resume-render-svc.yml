@@ -16,6 +16,7 @@ jobs:
             https://api.render.com/v1/services/srv-cvpvo7uuk2gs73e9n6t0/resume
   trigger-api:
     runs-on: ubuntu-latest
+    needs: resume-service
     steps:
       - name: Trigger project build / spin up server
         run: |
